@@ -1,0 +1,124 @@
+﻿#rcornersM {
+    border-radius: 25px;
+    background: white;
+    width: 380px;
+    height: 320px;
+    border: 2px solid black;
+    color: black;
+    position:relative;
+    left:425px;
+}
+
+.centerpadding {
+    padding: 100px 3em 20px 3em;
+}
+.TextBoxDesignM {
+    border-radius: 25px;
+    width: 300px;
+    height: 35px
+}
+
+.buttondesignM {
+    border-radius: 25px;
+    width: 120px;
+    height: 35px;
+}
+
+.buttondesignM:hover {
+    background-color: lightgreen;
+    width: 125px;
+    height: 40px;
+}
+
+#RegPageCornerBox {
+    border-radius: 25px;
+    background: white;
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    color: black;
+    position: relative;
+    left: 435px;
+}
+
+/*Master Main Page Design instructions*/
+
+.LeftSideContent{
+    float: left;
+    border: 1px solid black;
+    width: 50%;
+    height: auto;
+}
+
+.RightSidecontent{
+    float:right;
+    border:1px solid black;
+    width: 50%;
+    height: auto;
+}
+
+.sides {
+    margin: 0;
+}
+
+.left {
+    float: left;
+    width: 75%;
+    overflow: hidden;
+    border:1px solid black;
+}
+
+.right {
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.SearchTextBoxDesign {
+    border-radius: 25px;
+    width: 180px;
+    height: 20px;
+}
+
+.SearchByDropDownValue {
+    border-radius: 25px;
+    width: 100px;
+    height: 35px;
+}
+
+.searchButtonDesign {
+    border-radius: 25px;
+    width: 100px;
+    height: 35px;
+}
+
+.searchButtonDesign:hover {
+    background-color: lightgreen;
+    width: 125px;
+    height: 40px;
+}
+
+.TextBoxDesignTableSearch {
+    border-radius: 25px;
+    width: 60px;
+    height: 35px;
+}
+    .TextBoxDesignTableSearch:hover {
+        background-color: lightgreen;
+        width: 65px;
+        height: 40px;
+    }
+
+.buttondesignM_R {
+    border-radius: 25px;
+    width: 120px;
+    height: 35px;
+}
+
+.buttondesignM_R:hover {
+    background-color: red;
+    color:white;
+    width: 125px;
+    height: 40px;
+}

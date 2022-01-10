@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterForMainPage.master.cs" Inherits="JobApplicationPortal.MasterForMainPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="MEDesignInstructions.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #4267B2;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            width: 892px;
+        }
+        .auto-style4 {
+            width: 458px;
+        }
+        .auto-style5 {
+            width: 377px;
+            height: 57px;
+        }
+        .auto-style6 {
+            float:left;
+            height: 50px;
+            width: 64px;
+        }
+        .auto-style7 {
+            float: right;
+            height: 56px;
+            width: 64px;
+        }
+
+        .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 260px;
+  border-radius:12px;
+  margin-top:35%;
+  border:2px solid black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <table class="auto-style2">
+                            <tr>
+                                <td class="auto-style4">
+                                    <span><asp:Image ImageUrl="~/Icons/job portal-logos_white.png" runat="server" Height="68px" Width="85px" /></span>
+                                </td>
+                                <td class="auto-style3"><center><h2 style="color:white;">JOB PORTAL</h2></center></td>
+                                <td>
+                                    <div class="auto-style5" style="position:relative;margin-left:60px;">
+                                    <div class="auto-style6 dropdown">
+                                        <asp:ImageButton ID="UserInformationButton" runat="server" ImageUrl="~/Icons/outline_account_circle_black_24dp.png" style="float:left;" />
+                                        <div class="dropdown-content">
+                                            <p><b>Name:</b><asp:Label ID="AdminName" Text="NILL" runat="server" /></p>
+                                            <p><b>Last Log in Time:</b> <asp:Label ID="LogInTime" runat="server" Text="NILL"></asp:Label></p>
+                                            <p><b>Last Log Out Time:</b> <asp:Label ID="LogOutTime" runat="server" Text="NILL"></asp:Label></p>
+                                        </div>
+                                    </div>
+                                    <div class="auto-style7">
+                                        <asp:ImageButton ID="LogOutButton" runat="server" ImageUrl="~/Icons/Google Logout Icon.png" style="float:right;" OnClick="LogOutButton_Click" />
+                                    </div>
+                                    </div>
+                                 </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <footer>
+        <center>&copy; JOB PORTAL 2021</center>
+    </footer>
+</body>
+</html>

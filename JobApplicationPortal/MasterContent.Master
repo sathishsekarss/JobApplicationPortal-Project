@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterContent.Master.cs" Inherits="JobApplicationPortal.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="DesignInstructions.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size:small;
+  background-color: black;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+        .auto-style10 {
+            width: 100%;
+            background-color: #FF66FF;
+        }
+        .auto-style11 {
+            width: 100%;
+            margin-bottom: 0px;
+        }
+        .auto-style12 {
+            width: 643px;
+        }
+        .auto-style14 {
+            width: 47px;
+            height: 47px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+
+             <table class="auto-style10">
+                 <tr>
+                     <td>
+                         <table class="auto-style11">
+                             <tr>
+                                 <td class="auto-style12">&nbsp;</td>
+                                 <td><h2>Header</h2></td>
+                                 <td style="display:block ;"><asp:ImageButton ID="LogOutButton" ImageUrl="~/Icons/LogOutPng Image.png" runat="server" Height="44px" OnClick="LogOutButton_Click" Width="51px" style="float:right;" /><asp:ImageButton ID="UserInfoButton" ImageUrl="~/Icons/Sample_User_Icon.png" runat="server" class="auto-style14" style="position:relative; left:100px;" OnClick="UserInfoButton_Click1" /></td>
+                             </tr>
+                         </table>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>&nbsp;</td>
+                 </tr>
+             </table>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

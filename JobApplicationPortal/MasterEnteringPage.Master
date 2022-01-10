@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterEnteringPage.master.cs" Inherits="JobApplicationPortal.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #4267B2;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+        body{
+            background-color:#898F9C;
+        }
+        .auto-style3 {
+            margin-left: 333px;
+        }
+        .auto-style5 {
+            width: 770px;
+        }
+    </style>
+</head>
+<body style="border:1px solid black; height:100%; width:100%; border-bottom:1px solid white">
+    <form id="form1" runat="server">
+            <table class="auto-style1">
+                <tr>
+                    <td>
+                        <table class="auto-style2">
+                            <tr>
+                                <td class="auto-style5"><center><asp:Image ImageUrl="~/Icons/job portal-logos_white.png" runat="server"  Height="89px" Width="98px" /></center></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer style="border-top:2px solid black">
+            <center><p>&copy; JOB PORTAL 2021</p></center>
+        </footer>
+    </form>
+</body>
+</html>
